@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
 .App {
   text-align: center;
 }
@@ -32,7 +38,32 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+nav {
+  background-color: #3f51b5;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 20px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a.active {
+  color: coral;
 }
