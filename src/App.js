@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import UserList, { users, usersList } from './components/UserList';
 import RootLayout from './components/RootLayout';
 import PageNotFound from './components/PageNotFound';
+import Contact, { data } from './components/Contact';
 
 const routes = createBrowserRouter(createRoutesFromElements(
   <Route path='/' element={<RootLayout />}>
@@ -14,6 +15,7 @@ const routes = createBrowserRouter(createRoutesFromElements(
     <Route index element={<Home />}></Route>
     <Route path='/about' element={<About />}></Route>
     <Route path='/userlist' element={<UserList />} loader={users}></Route>
+    <Route path='/contact' element={<Contact />} action={data}></Route>
   </Route>
 ))
 

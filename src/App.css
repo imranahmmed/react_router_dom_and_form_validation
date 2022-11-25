@@ -44,7 +44,6 @@
   }
 }
 
-
 nav {
   background-color: #3f51b5;
 }
@@ -66,4 +65,47 @@ nav ul li a {
 
 nav ul li a.active {
   color: coral;
+}
+
+.contact {
+  width: 80%;
+  background-color: #3f51b5;
+  padding: 20px;
+  color: #fff;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.contact input {
+  width: calc(100% - 25px);
+  height: 40px;
+  padding: 0px 10px;
+  display: block;
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  outline: 0;
+}
+.contact textarea {
+  width: calc(100% - 25px);
+  padding: 10px;
+  display: block;
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border: 0;
+  outline: 0;
+}
+
+.contact button {
+  width: 50%;
+  text-align: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+.errorMassage {
+  color: #ff7f53;
+  font-weight: 600;
 }
